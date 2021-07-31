@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS emptrck;
+CREATE DATABASE emptrck;
+USE emptrck;
