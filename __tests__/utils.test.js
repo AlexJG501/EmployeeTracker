@@ -47,8 +47,8 @@ test('toTitleCase returns a string in title case if there are no spaces', () => 
 })
 
 test('toTitleCase returns a string in title case if there are spaces', () => {
-    const result = toTitleCase('hello i am vanessa');
-    expect(result).toBe('Hello I Am Vanessa');
+    const result = toTitleCase('hello i am alex');
+    expect(result).toBe('Hello I Am Alex');
 })
 
 test('toTitleCase only changes the first letter', () => {
