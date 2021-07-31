@@ -1,4 +1,4 @@
-use employee_db;
+USE employee_db;
 
 INSERT INTO department (name)
 VALUES 
@@ -24,7 +24,7 @@ VALUES
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
 VALUES
     ('Jerry', 'Smith', 1, 2),
-    ('Tom', 'Brady', 2, NULL),
+    ('Tom', 'Brady', 2, 1),
     ('Michael', 'Jordan', 3, 4),
     ('Scooby', 'Doo', 4, NULL),
     ('Patrick', 'Star', 5, 4),
