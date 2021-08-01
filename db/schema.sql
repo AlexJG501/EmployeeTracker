@@ -10,7 +10,6 @@ CREATE TABLE department (
 ),
 
 
-
 CREATE TABLE role (
     id INTEGER UNSIGNED AUTO_INCREMENT,
     title VARCHAR(30) NOT NULL,
@@ -28,6 +27,7 @@ CREATE TABLE employee (
     last_name VARCHAR(30) NOT NULL,
     role_id INTEGER UNSIGNED NOT NULL,
     manager_id INTEGER UNSIGNED references id,
-    PRIMARY KEY (id),
+    PRIMARY KEY (id),FOREIGN KEY (role_id) REFERENCES role(id)
+        ON DELETE CASCADE,
     CONSTRAINT uq_person UNIQUE (first_name, last_name, role_id, manager_id)
 );
